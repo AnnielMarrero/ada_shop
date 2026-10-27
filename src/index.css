@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Playfair Display', Georgia, serif;
+}
+
+@layer base {
+  html { scroll-behavior: smooth; }
+  body { margin: 0; font-family: var(--font-sans); }
+  ::selection { background: #f2b0c2; color: #44332f; }
+}
+
+@layer components {
+  .eyebrow { display: inline-flex; align-items: center; gap: .5rem; color: #b66c7d; font-size: .7rem; font-weight: 700; letter-spacing: .18em; line-height: 1; text-transform: uppercase; }
+  .section-title { color: #4b3833; font-family: var(--font-serif); font-size: clamp(2.5rem, 5vw, 4.25rem); letter-spacing: -.055em; line-height: .98; }
+  .button-primary, .button-secondary, .button-pink { display: inline-flex; align-items: center; gap: .55rem; border-radius: 9999px; font-size: .8rem; font-weight: 700; transition: all .25s ease; }
+  .button-primary { background: #4b3833; color: #fffaf5; padding: .9rem 1.3rem; box-shadow: 0 10px 20px rgba(75,56,51,.12); }
+  .button-primary:hover { background: #b66c7d; transform: translateY(-2px); }
+  .button-secondary { border: 1px solid #cfa69e; color: #6e4f48; padding: .8rem 1.1rem; }
+  .button-secondary:hover { border-color: #b66c7d; background: #fff; color: #b66c7d; }
+  .button-pink { background: #f4b0c5; color: #563d42; padding: .9rem 1.3rem; }
+  .button-pink:hover { background: #fffaf5; transform: translateY(-2px); }
+  .button-text { display: inline-flex; align-items: center; gap: .45rem; color: #704e50; font-size: .8rem; font-weight: 700; }
+  .button-text:hover { color: #b66c7d; }
+  .nav-link { position: relative; }
+  .nav-link::after { position: absolute; bottom: -.45rem; left: 0; height: 1px; width: 0; background: #b66c7d; content: ''; transition: width .25s ease; }
+  .nav-link:hover::after { width: 100%; }
+  .mobile-link { border-bottom: 1px solid #f0e1da; padding: .9rem; }
+  .icon-button { display: grid; height: 2.75rem; width: 2.75rem; place-items: center; border: 1px solid #d8b9ac; border-radius: 9999px; color: #70534b; transition: all .2s ease; }
+  .icon-button:hover { border-color: #b66c7d; background: #b66c7d; color: white; }
+}

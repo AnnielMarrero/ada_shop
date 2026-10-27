@@ -1,0 +1,6 @@
+
+Haz una aplicación web para promocionar un negocio de venta de carteras en Cuba. Hazlo profesional e inserta fotos que te voy a indicar en esta carpeta. Hazlo con el objetivo de darle publicadad al negocio
+El nombre de la persona de llama Adaris y su contacto es +53 55207629, crea un boton q de click y le envie un mensaje algo 'Hola, me gustaría comprar una de tus carteras'.
+
+
+ Use react and vite as tecnologies and TailwindCSS for styling. Make it responsive and mobile-first. Use spanish as language for the UI and make just the frontend.
